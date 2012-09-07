@@ -1,14 +1,12 @@
 Source: camera-test
 Section: user/other
 Priority: optional
-Maintainer: Mohammad Abu-Garbeyyeh <mohammad@unknown>
+Maintainer: Mohammad Abu-Garbeyyeh <mohammad7410@gmail.com>
 Build-Depends: debhelper (>= 5), libqt4-dev
 Standards-Version: 3.7.3
-Homepage: <insert the upstream URL, if relevant>
 
 Package: camera-test
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Example app showing how to capture image with stock app
- <insert long description, indented with spaces>
 XSBC-Maemo-Display-Name: Camera example
