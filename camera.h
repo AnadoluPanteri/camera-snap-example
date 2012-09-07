@@ -9,6 +9,9 @@
 #define CAMERA_SERVICE "com.nokia.maemo.CameraService"
 #define CAMERA_INTERFACE "com.nokia.maemo.meegotouch.CameraInterface"
 
+#define STILL_MODE "still-capture"
+#define VIDEO_MODE "video-capture"
+
 class Camera : public QObject
 {
     Q_OBJECT

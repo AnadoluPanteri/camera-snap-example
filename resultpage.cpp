@@ -42,5 +42,5 @@ void ResultPage::loadImage(QString mode, QString path)
     m_pathLabel->setText(path);
 
     if (mode != "video-capture")
-        m_imageWidget->setImage(QImage(path));
+        m_imageWidget->setImage(QImage(path).scaled(400, 400, Qt::KeepAspectRatio, Qt::FastTransformation));
 }

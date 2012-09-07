@@ -12,7 +12,7 @@ void Camera::disconnectSignals()
                    "captureCanceled", this, SLOT(captureCanceled(QString)));
 
     bus.disconnect("com.nokia.maemo.CameraService", "/", "com.nokia.maemo.meegotouch.CameraInterface",
-                "captureCompleted", this, SLOT(captureCompleted(QString,QString)));
+                   "captureCompleted", this, SLOT(captureCompleted(QString,QString)));
 }
 
 void Camera::captureCanceled(const QString &mode)
@@ -30,14 +30,14 @@ void Camera::captureCompleted(const QString &mode, const QString &fileName)
 
 void Camera::startCamera(Camera::CaptureMode mode)
 {
-    QString modeString = "still-capture";
+    QString modeString = STILL_MODE;
 
     switch (mode) {
     case Camera::CameraStillShot:
-        modeString = "still-capture";
+        modeString = STILL_MODE;
         break;
     case Camera::CameraVideo:
-        modeString = "video-capture";
+        modeString = VIDEO_MODE;
         break;
     default:
         break;
