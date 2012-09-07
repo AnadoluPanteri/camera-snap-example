@@ -8,10 +8,10 @@ Camera::Camera(QObject *parent) :
 void Camera::disconnectSignals()
 {
     QDBusConnection bus = QDBusConnection::sessionBus();
-    bus.disconnect("com.nokia.maemo.CameraService", "/", "com.nokia.maemo.meegotouch.CameraInterface",
+    bus.disconnect(CAMERA_SERVICE, "/", CAMERA_INTERFACE,
                    "captureCanceled", this, SLOT(captureCanceled(QString)));
 
-    bus.disconnect("com.nokia.maemo.CameraService", "/", "com.nokia.maemo.meegotouch.CameraInterface",
+    bus.disconnect(CAMERA_SERVICE, "/", CAMERA_INTERFACE,
                    "captureCompleted", this, SLOT(captureCompleted(QString,QString)));
 }
 
