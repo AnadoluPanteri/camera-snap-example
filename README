@@ -1,0 +1,13 @@
+Example application demonstrating how to take photos/videos
+using stock camera-ui application.
+
+== Usage ==
+Feel free to copy the Camera class (camera.cpp and camera.h) to your
+project as is and use it.
+
+== Classes ==
+CameraPage: Main application page, shows buttons for capture types.
+ResultPage: Shows captured image, with path and a button to delete.
+Camera: Class to help with showing and fetching captured image.
+
+Licensed under GPLv3
